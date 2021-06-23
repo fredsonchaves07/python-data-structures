@@ -1,5 +1,4 @@
 from timeit import timeit
-
 """
 - Realiza a compração objetiva entre 2 algoritmos considerando as diferenças
 entre processamento, sistema operacional, linguagem de programação
@@ -20,3 +19,18 @@ class BigOAnotation:
         
         print(f'Result: {sum}')
         print(f'Efficient: {timeit()}')
+
+    def list1(self):
+        list = []
+
+        for i in range(1000):
+            list += [i]
+        print(f'Result: {list}')
+        print(f'Efficient: {timeit()}')
+    
+    def list2(self):
+        result = range(1000)
+        for i in result:
+            print(f'Result: {i}')
+        print(f'Efficient: {timeit()}')
+        
