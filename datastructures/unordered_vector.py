@@ -16,18 +16,11 @@ class UnorderedVector:
 
         return False
 
-    def print(self):
-        if self.is_empty():
-            print("O vetor está vazio")
-        else:
-            for i in range(self.last_position + 1):
-                print(i, " - ", self.values[i])
-
     def insert(self, value):
         if self.is_capacity_max():
             print("Capacidade máxima atiginda")
         else:
-            self.values.append(value)
+            self.values.insert(self.last_position + 1, value)
             self.last_position += 1
 
     def search(self, value):
@@ -39,33 +32,13 @@ class UnorderedVector:
                 print(f"{i} - {value}")
 
     def remove(self, value):
-        for i in range(self.last_position):
-            if self.values[i] == value:
-                self.values[i] = self.values[i + 1]
-            else:
-                continue
-
-            if self.values[i] == value:
-                continue
-
-            self.last_position = i
-
-    def __get_positions(self, value):
-        positions = []
-
-        if self.is_empty():
-            return None
+        aux_values = []
 
         for i in range(self.last_position + 1):
-            if value == self.values[i]:
-                positions.append(i)
+            if self.values[i] != value:
+                aux_values.append(self.values[i])
 
-        return positions
+        for i in range(len(aux_values)):
+            self.values[i] = aux_values[i]
 
-    def __str__(self):
-        str = ""
-
-        for i in range(self.last_position + 1):
-            str += f"{i} - {self.values[i]}\n"
-
-        return str
+        self.last_position = len(aux_values) - 1

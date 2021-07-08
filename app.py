@@ -24,5 +24,4 @@ unordered_vector.insert(3)
 unordered_vector.insert(6)
 unordered_vector.insert(0)
 unordered_vector.insert(0)
-test = unordered_vector
-print(test)
+print(unordered_vector)
