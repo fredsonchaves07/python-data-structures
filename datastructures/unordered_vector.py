@@ -10,6 +10,9 @@ class UnorderedVector:
 
         return False
 
+    def length(self):
+        return self.__last_position + 0
+
     def is_capacity_max(self):
         if self.__last_position == self.__capacity - 1:
             return True
@@ -42,3 +45,11 @@ class UnorderedVector:
             self.__values[i] = aux_values[i]
 
         self.__last_position = len(aux_values) - 1
+
+    def __str__(self):
+        string = ""
+
+        for i in range(self.__last_position + 1):
+            string += f"{i} - {self.__values[i]}\n"
+
+        return string
