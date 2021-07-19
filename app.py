@@ -28,8 +28,12 @@ from datastructures.unordered_vector import UnorderedVector
 # print(unordered_vector)
 
 # Ordered Vector
-ordered_vector = OrderedVector(3)
-ordered_vector.insert(1)
+ordered_vector = OrderedVector(5)
+ordered_vector.insert(5)
 ordered_vector.insert(5)
 ordered_vector.insert(0)
-ordered_vector.insert(10)
+ordered_vector.search(0)
+ordered_vector.remove(5)
+print(ordered_vector.length())
+ordered_vector.insert(1)
+print(ordered_vector)
