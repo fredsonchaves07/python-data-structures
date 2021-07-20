@@ -42,6 +42,28 @@ class OrderedVector:
             if value == self.__values[i]:
                 print(f"{i} - {value}")
 
+    def binary_search(self, value):
+        upper_limit = 0
+        inferior_limit = self.__last_position
+
+        while True:
+            if upper_limit > inferior_limit:
+                break
+
+            current_position = int((inferior_limit + upper_limit) / 2)
+
+            if value == self.__values[current_position]:
+                print(f"{current_position} - {self.__values[current_position]}")
+                break
+
+            if value >= self.__values[current_position]:
+                upper_limit = current_position + 1
+                continue
+
+            if value <= self.__values[current_position]:
+                inferior_limit = current_position - 1
+                continue
+
     def remove(self, value):
         aux_values = []
 
