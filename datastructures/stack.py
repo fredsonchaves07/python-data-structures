@@ -32,17 +32,8 @@ class Stack:
             if value == self.__values[i]:
                 print(f"{i} - {value}")
 
-    def remove(self, value):
-        aux_values = []
-
-        for i in range(self.__top + 1):
-            if self.__values[i] != value:
-                aux_values.append(self.__values[i])
-
-        for i in range(len(aux_values)):
-            self.__values[i] = aux_values[i]
-
-        self.__top = len(aux_values) - 1
+    def remove(self):
+        self.__top -= 1
 
     def peek(self):
         if self.__top != -1:
