@@ -1,3 +1,5 @@
+import algorithms
+from algorithms import expression_validate
 from datastructures.bigO_anotation import BigOAnotation
 from datastructures.ordered_vector import OrderedVector
 from datastructures.stack import Stack
@@ -50,6 +52,9 @@ stack.insert(1)
 stack.insert(2)
 print(stack.peek())
 stack.insert(10)
-stack.search(10)
-stack.remove(10)
+stack.remove()
 print(stack.peek())
+
+expression = "a{b(c]d}e"
+
+print(expression_validate.is_valid_expression(expression))

@@ -24,16 +24,11 @@ class Stack:
             self.__top += 1
             self.__values.append(value)
 
-    def search(self, value):
-        if self.is_empty():
-            print("A pilha está vazia")
-
-        for i in range(self.__top + 1):
-            if value == self.__values[i]:
-                print(f"{i} - {value}")
-
     def remove(self):
+        value = self.__values[self.__top]
         self.__top -= 1
+
+        return value
 
     def peek(self):
         if self.__top != -1:
