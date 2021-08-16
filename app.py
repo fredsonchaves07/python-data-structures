@@ -1,6 +1,7 @@
 import algorithms
 from algorithms import expression_validate
 from datastructures.bigO_anotation import BigOAnotation
+from datastructures.circular_queue import CircularQueue
 from datastructures.ordered_vector import OrderedVector
 from datastructures.stack import Stack
 from datastructures.unordered_vector import UnorderedVector
@@ -46,15 +47,30 @@ from datastructures.unordered_vector import UnorderedVector
 # ordered_vector.binary_search(5)
 
 # Stack
-stack = Stack(5)
-stack.insert(10)
-stack.insert(1)
-stack.insert(2)
-print(stack.peek())
-stack.insert(10)
-stack.remove()
-print(stack.peek())
+# stack = Stack(5)
+# stack.insert(10)
+# stack.insert(1)
+# stack.insert(2)
+# print(stack.peek())
+# stack.insert(10)
+# stack.remove()
+# print(stack.peek())
 
-expression = "a{b(c]d}e"
+# expression = "a{b(c]d}e"
 
-print(expression_validate.is_valid_expression(expression))
+# print(expression_validate.is_valid_expression(expression))
+
+# Queue
+queue = CircularQueue(5)
+queue.peek()
+queue.queue(1)
+queue.peek()
+queue.queue(5)
+queue.peek()
+queue.queue(3)
+queue.queue(4)
+queue.queue(2)
+queue.queue(7)
+queue.dequeue()
+queue.dequeue()
+queue.peek()
