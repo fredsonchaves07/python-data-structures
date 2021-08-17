@@ -3,6 +3,7 @@ from algorithms import expression_validate
 from datastructures.bigO_anotation import BigOAnotation
 from datastructures.circular_queue import CircularQueue
 from datastructures.ordered_vector import OrderedVector
+from datastructures.priority_queue import PriorityQueue
 from datastructures.stack import Stack
 from datastructures.unordered_vector import UnorderedVector
 
@@ -61,16 +62,28 @@ from datastructures.unordered_vector import UnorderedVector
 # print(expression_validate.is_valid_expression(expression))
 
 # Queue
-queue = CircularQueue(5)
+# queue = CircularQueue(5)
+# queue.peek()
+# queue.queue(1)
+# queue.peek()
+# queue.queue(5)
+# queue.peek()
+# queue.queue(3)
+# queue.queue(4)
+# queue.queue(2)
+# queue.queue(7)
+# queue.dequeue()
+# queue.dequeue()
+# queue.peek()
+
+# Priority Queue
+queue = PriorityQueue(5)
 queue.peek()
-queue.queue(1)
+queue.queue(30)
 queue.peek()
-queue.queue(5)
+queue.queue(50)
 queue.peek()
-queue.queue(3)
-queue.queue(4)
-queue.queue(2)
-queue.queue(7)
-queue.dequeue()
+queue.queue(10)
+queue.peek()
 queue.dequeue()
 queue.peek()
