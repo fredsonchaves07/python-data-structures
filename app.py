@@ -2,6 +2,7 @@ import algorithms
 from algorithms import expression_validate
 from datastructures.bigO_anotation import BigOAnotation
 from datastructures.circular_queue import CircularQueue
+from datastructures.deque import Deque
 from datastructures.ordered_vector import OrderedVector
 from datastructures.priority_queue import PriorityQueue
 from datastructures.stack import Stack
@@ -77,13 +78,28 @@ from datastructures.unordered_vector import UnorderedVector
 # queue.peek()
 
 # Priority Queue
-queue = PriorityQueue(5)
-queue.peek()
-queue.queue(30)
-queue.peek()
-queue.queue(50)
-queue.peek()
-queue.queue(10)
-queue.peek()
-queue.dequeue()
-queue.peek()
+# queue = PriorityQueue(5)
+# queue.peek()
+# queue.queue(30)
+# queue.peek()
+# queue.queue(50)
+# queue.peek()
+# queue.queue(10)
+# queue.peek()
+# queue.dequeue()
+# queue.peek()
+
+# Deque
+deque = Deque(5)
+deque.add_end(5)
+print(deque.get_start(), deque.get_end())
+deque.add_end(10)
+print(deque.get_start(), deque.get_end())
+deque.add_start(1)
+print(deque.get_start(), deque.get_end())
+deque.add_start(2)
+deque.add_end(11)
+print(deque.get_start(), deque.get_end())
+deque.remove_start()
+deque.remove_end()
+print(deque.get_start(), deque.get_end())
