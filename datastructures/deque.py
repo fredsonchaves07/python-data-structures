@@ -1,8 +1,8 @@
 class Deque:
     def __init__(self, capacity):
         self.__capacity = capacity
-        self.__start = 0
-        self.__end = -1
+        self.__start = -1
+        self.__end = 0
         self.__values = []
         self.__length = 0
 
@@ -20,7 +20,7 @@ class Deque:
             print("Fila cheia")
             return
 
-        if self.is_empty():
+        if self.__start == -1:
             self.__start = 0
             self.__end = 0
         elif self.__start == 0:
@@ -36,7 +36,7 @@ class Deque:
             print("Fila cheia")
             return
 
-        if self.is_empty():
+        if self.__start == -1:
             self.__start = 0
             self.__end = 0
         elif self.__end == self.__capacity - 1:
@@ -52,7 +52,7 @@ class Deque:
             print("Fila vazia")
             return
 
-        if self.length() == 1:
+        if self.__start == self.__end:
             self.__start = -1
             self.__end = -1
         elif self.__start == self.__capacity - 1:
@@ -60,18 +60,22 @@ class Deque:
         else:
             self.__start += 1
 
+        self.__length -= 1
+
     def remove_end(self):
         if self.is_empty():
             print("Fila vazia")
             return
 
-        if self.length() == 1:
+        if self.__start == self.__end:
             self.__start = -1
             self.__end = -1
         elif self.__start == 0:
-            self.__start = self.__capacity - 1
+            self.__end = self.__capacity - 1
         else:
             self.__end -= 1
+
+        self.__length -= 1
 
     def get_start(self):
         if self.is_empty():
