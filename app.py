@@ -5,6 +5,7 @@ from datastructures.circular_queue import CircularQueue
 from datastructures.deque import Deque
 from datastructures.ordered_vector import OrderedVector
 from datastructures.priority_queue import PriorityQueue
+from datastructures.simple_linked_list import SimpleLinkedList
 from datastructures.stack import Stack
 from datastructures.unordered_vector import UnorderedVector
 
@@ -90,18 +91,26 @@ from datastructures.unordered_vector import UnorderedVector
 # queue.peek()
 
 # Deque
-deque = Deque(5)
-deque.add_end(5)
-print(deque.get_start(), deque.get_end())
-deque.add_end(10)
-print(deque.get_start(), deque.get_end())
-deque.add_start(3)
-print(deque.get_start(), deque.get_end())
-deque.add_start(2)
-deque.add_end(11)
-print(deque.get_start(), deque.get_end())
-deque.remove_start()
-deque.remove_end()
-print(deque.get_start(), deque.get_end())
-deque.remove_end()
-print(deque.get_start(), deque.get_end())
+# deque = Deque(5)
+# deque.add_end(5)
+# print(deque.get_start(), deque.get_end())
+# deque.add_end(10)
+# print(deque.get_start(), deque.get_end())
+# deque.add_start(3)
+# print(deque.get_start(), deque.get_end())
+# deque.add_start(2)
+# deque.add_end(11)
+# print(deque.get_start(), deque.get_end())
+# deque.remove_start()
+# deque.remove_end()
+# print(deque.get_start(), deque.get_end())
+# deque.remove_end()
+# print(deque.get_start(), deque.get_end())
+
+# SimpleLinkedList
+linked_list = SimpleLinkedList()
+linked_list.add_start(1)
+linked_list.add_start(5)
+linked_list.add_start(2)
+linked_list.add_start(10)
+linked_list.get_values()
