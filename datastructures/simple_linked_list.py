@@ -32,10 +32,12 @@ class SimpleLinkedList:
             current_node = current_node.next
 
     def remove_start(self):
-        aux_node = self._first
-
         if not self._first.next:
+            print("A lista está vazia")
+
             return None
+
+        aux_node = self._first
 
         self._first = self._first.next
 
