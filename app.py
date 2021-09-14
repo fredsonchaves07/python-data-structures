@@ -3,6 +3,7 @@ from algorithms import expression_validate
 from datastructures.bigO_anotation import BigOAnotation
 from datastructures.circular_queue import CircularQueue
 from datastructures.deque import Deque
+from datastructures.double_linked_list import DoubleLinkedList
 from datastructures.ordered_vector import OrderedVector
 from datastructures.priority_queue import PriorityQueue
 from datastructures.simple_linked_list import SimpleLinkedList
@@ -108,13 +109,21 @@ from datastructures.unordered_vector import UnorderedVector
 # print(deque.get_start(), deque.get_end())
 
 # SimpleLinkedList
-linked_list = SimpleLinkedList()
-linked_list.add_start(1)
-linked_list.add_start(5)
-linked_list.add_start(2)
-linked_list.add_start(10)
-linked_list.get_values()
-linked_list.remove_start()
-linked_list.get_values()
-linked_list.search(5)
-linked_list.remove(2)
+# linked_list = SimpleLinkedList()
+# linked_list.add_start(1)
+# linked_list.add_start(5)
+# linked_list.add_start(2)
+# linked_list.add_start(10)
+# linked_list.get_values()
+# linked_list.remove_start()
+# linked_list.get_values()
+# linked_list.search(5)
+# linked_list.remove(2)
+
+double_linked_list = DoubleLinkedList()
+double_linked_list.insert_start(1)
+double_linked_list.insert_start(2)
+double_linked_list.insert_start(5)
+double_linked_list.insert_start(7)
+double_linked_list.insert_start(3)
+double_linked_list.get_value()
