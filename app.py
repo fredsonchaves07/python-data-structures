@@ -4,6 +4,7 @@ from datastructures.bigO_anotation import BigOAnotation
 from datastructures.circular_queue import CircularQueue
 from datastructures.deque import Deque
 from datastructures.double_linked_list import DoubleLinkedList
+from datastructures.doubly_linked_list import DoublyLinkedList
 from datastructures.ordered_vector import OrderedVector
 from datastructures.priority_queue import PriorityQueue
 from datastructures.simple_linked_list import SimpleLinkedList
@@ -120,12 +121,21 @@ from datastructures.unordered_vector import UnorderedVector
 # linked_list.search(5)
 # linked_list.remove(2)
 
-double_linked_list = DoubleLinkedList()
-double_linked_list.insert_start(1)
-double_linked_list.insert_start(2)
-double_linked_list.insert_start(5)
-double_linked_list.insert_start(7)
-double_linked_list.insert_start(3)
-double_linked_list.get_value()
-double_linked_list.insert_end(10)
-double_linked_list.get_value()
+# double_linked_list = DoubleLinkedList()
+# double_linked_list.insert_start(1)
+# double_linked_list.insert_start(2)
+# double_linked_list.insert_start(5)
+# double_linked_list.insert_start(7)
+# double_linked_list.insert_start(3)
+# double_linked_list.get_value()
+# double_linked_list.insert_end(10)
+# double_linked_list.get_value()
+
+doubly_linked_list = DoublyLinkedList()
+doubly_linked_list.insert_start(1)
+doubly_linked_list.insert_start(2)
+doubly_linked_list.insert_start(3)
+doubly_linked_list.insert_start(4)
+doubly_linked_list.insert_start(5)
+doubly_linked_list.inser_end(10)
+doubly_linked_list.show_end()
