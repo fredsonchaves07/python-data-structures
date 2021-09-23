@@ -90,3 +90,24 @@ class DoublyLinkedList:
         self._end = self._end.previous
 
         return aux
+
+    def remove_position(self, value):
+        node = self._first
+
+        while node._value != value:
+            node = node.next
+
+            if node is None:
+                return None
+
+        if node == self._first:
+            self._first = node.next
+        else:
+            node.previous.next = node.next
+
+        if node == self._end:
+            self._end = node.previous
+        else:
+            node.next.previous = node.previous
+
+        return node
