@@ -1,6 +1,7 @@
 import algorithms
 from algorithms import expression_validate
 from datastructures.bigO_anotation import BigOAnotation
+from datastructures.bubble_sort import BubbleSort
 from datastructures.circular_queue import CircularQueue
 from datastructures.deque import Deque
 from datastructures.double_linked_list import DoubleLinkedList
@@ -131,11 +132,12 @@ from datastructures.unordered_vector import UnorderedVector
 # double_linked_list.insert_end(10)
 # double_linked_list.get_value()
 
-doubly_linked_list = DoublyLinkedList()
-doubly_linked_list.insert_start(1)
-doubly_linked_list.insert_start(2)
-doubly_linked_list.insert_start(3)
-doubly_linked_list.insert_start(4)
-doubly_linked_list.insert_start(5)
-doubly_linked_list.inser_end(10)
-doubly_linked_list.show_end()
+# doubly_linked_list = DoublyLinkedList()
+# doubly_linked_list.insert_start(1)
+# doubly_linked_list.insert_start(2)
+# doubly_linked_list.insert_start(3)
+# doubly_linked_list.insert_start(4)
+# doubly_linked_list.insert_start(5)
+# doubly_linked_list.inser_end(10)
+# doubly_linked_list.show_end()
+BubbleSort([10, 5, 6, 1, 0, 11])
