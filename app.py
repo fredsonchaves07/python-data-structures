@@ -10,6 +10,7 @@ from datastructures.insertion_sort import InsertionSort
 from datastructures.ordered_vector import OrderedVector
 from datastructures.priority_queue import PriorityQueue
 from datastructures.selection_sort import SelectionSort
+from datastructures.shell_sort import ShelSort
 from datastructures.simple_linked_list import SimpleLinkedList
 from datastructures.stack import Stack
 from datastructures.unordered_vector import UnorderedVector
@@ -144,4 +145,5 @@ from datastructures.unordered_vector import UnorderedVector
 # doubly_linked_list.show_end()
 # BubbleSort([10, 5, 6, 1, 0, 11])
 # SelectionSort([10, 5, 6, 1, 0, 11])
-InsertionSort([10, 5, 6, 1, 0, 11])
+# InsertionSort([10, 5, 6, 1, 0, 11])
+ShelSort([10, 5, 6, 1, 0, 11])
